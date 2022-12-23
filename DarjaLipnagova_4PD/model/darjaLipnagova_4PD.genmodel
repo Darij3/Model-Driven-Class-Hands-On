@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/DarjaLipnagova_4PD/src-gen" creationIcons="false"
+    editDirectory="/DarjaLipnagova_4PD.edit/src-gen" editorDirectory="/DarjaLipnagova_4PD.editor/src-gen"
+    modelPluginID="DarjaLipnagova_4PD" modelName="DarjaLipnagova_4PD" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>darjaLipnagova_4PD.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="DarjaLipnagova_4PD" disposableProviderFactory="true" ecorePackage="darjaLipnagova_4PD.ecore#/">
+    <genClasses ecoreClass="darjaLipnagova_4PD.ecore#//TurismaSistema">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference darjaLipnagova_4PD.ecore#//TurismaSistema/klients"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference darjaLipnagova_4PD.ecore#//TurismaSistema/administrators"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference darjaLipnagova_4PD.ecore#//TurismaSistema/celojums"/>
+    </genClasses>
+    <genClasses ecoreClass="darjaLipnagova_4PD.ecore#//Administrators">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference darjaLipnagova_4PD.ecore#//Administrators/turagentura"/>
+    </genClasses>
+    <genClasses ecoreClass="darjaLipnagova_4PD.ecore#//Klients"/>
+    <genClasses ecoreClass="darjaLipnagova_4PD.ecore#//Celojums">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference darjaLipnagova_4PD.ecore#//Celojums/aviolidojums"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference darjaLipnagova_4PD.ecore#//Celojums/viesnica"/>
+    </genClasses>
+    <genClasses ecoreClass="darjaLipnagova_4PD.ecore#//Aviolidojums"/>
+    <genClasses ecoreClass="darjaLipnagova_4PD.ecore#//Viesnica"/>
+    <genClasses ecoreClass="darjaLipnagova_4PD.ecore#//Turagentura"/>
+  </genPackages>
+</genmodel:GenModel>

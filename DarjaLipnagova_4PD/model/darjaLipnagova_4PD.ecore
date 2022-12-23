@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="darjaLipnagova_4PD" nsURI="http://www.example.org/darjaLipnagova_4PD"
+    nsPrefix="darjaLipnagova_4PD">
+  <eClassifiers xsi:type="ecore:EClass" name="TurismaSistema">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="klients" upperBound="-1"
+        eType="#//Klients" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="administrators" upperBound="-1"
+        eType="#//Administrators" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="celojums" upperBound="-1"
+        eType="#//Celojums" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Administrators">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="turagentura" upperBound="-1"
+        eType="#//Turagentura" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Klients"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Celojums">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="aviolidojums" upperBound="-1"
+        eType="#//Aviolidojums" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="viesnica" upperBound="-1"
+        eType="#//Viesnica" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Aviolidojums"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Viesnica"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Turagentura"/>
+</ecore:EPackage>

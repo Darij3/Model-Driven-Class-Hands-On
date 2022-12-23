@@ -1,0 +1,28 @@
+-- @path MM=/DarjaLipnagova_6PD/models/turisms.ecore
+-- @path MM1=/DarjaLipnagova_6PD/models/turismsTarget.ecore
+
+module turismaSistema;
+create OUT : MM1 from IN : MM;
+--1helper summ 1 likums kopesie reg klientus un premium klientus, 1 likums nokopets pasu klientu 1 likums regitrets klientiem
+--izsauksu helpe book piemers
+--premium klienta gala summu
+--turism sistema ielikt helperi.
+
+helper context MM!PremiumKlients def :konts(): Real=
+	  self.konts+self.bonus; 
+ 
+ rule Klients2premKlients {
+from--nokopet un izskatlot
+ b : MM!PremiumKlients 
+to
+ out : MM1!PremiumKlients (
+ konts <-b.konts,
+ parole <- b.parole,
+ bonus <- b.bonus,
+ galaSumma<-b.konts(),
+ login<-b.login,
+ epasts<-b.epasts
+
+ )
+}
+

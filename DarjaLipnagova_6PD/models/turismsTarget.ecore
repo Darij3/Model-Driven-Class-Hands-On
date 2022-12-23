@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="turismsTarget" nsURI="https://turismsTarget/1.0" nsPrefix="turismsTarget">
+  <eAnnotations source="http://www.eclipse.org/OCL/Import">
+    <details key="ecore" value="http://www.eclipse.org/emf/2002/Ecore"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Klients">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="login" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="epasts" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RegistretsKlients" eSuperTypes="#//Klients">
+    <eOperations name="celojumaPiedavajumaDetalas" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eOperations name="pieprasitPiedavajumaDetalas" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="vardsUzvards" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="parole" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="konts" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PremiumKlients" eSuperTypes="#//Klients">
+    <eOperations name="celojumaPiedavajumaDetalas" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eOperations name="pieprasitPiedavajumaDetalas" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="konts" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="parole" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bonus" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="galaSumma" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"
+        defaultValueLiteral="0"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Administrators">
+    <eOperations name="pieprasitTuragenturasSarakstu" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eOperations name="atjaunotCelojumaStatusu" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eOperations name="apstiprinatCelojumaStatusu" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eOperations name="pieskirtKlientiemBonusu" upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"/>
+    <eOperations name="aptiprinatLidojumu"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="adminVards" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="adminPass" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="adminEmail" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="turagenturasParametruSaraksts"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pakalpojums" eType="#//Celojums"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="viesnica" eType="#//Viesnica"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="premiumKlienti" upperBound="-1"
+        eType="#//PremiumKlients"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Turagentura">
+    <eOperations name="atlasitViesnicuSarakstu"/>
+    <eOperations name="piedavatAviolidojumuSarakstu" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eOperations name="pieprasitKlinetuSarakstu" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="adminEpasts" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pakalpojumaSniedzejs" eType="#//Administrators"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Celojums">
+    <eOperations name="pieprasitNumuruPieejamibu" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eOperations name="pieprasitKlientaDatus" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eOperations name="pieprasiRezervacijasDetalasAviolodojumam" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eOperations name="pieprasitAdminPasutijumaNr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eOperations name="rezervetNumuru" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="celosanasValsts" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="viesnica" upperBound="-1"
+        eType="#//Viesnica" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="aviolidojums" upperBound="-1"
+        eType="#//Aviolidojums" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Viesnica">
+    <eOperations name="atlasaPieejamasDatumus" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eOperations name="rezervetNumuru" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="viesnicasNosaukums" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="NumuruTips" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="atrasanasValsts" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="aviolidojums" eType="#//Aviolidojums"
+        eOpposite="#//Aviolidojums/viesnica"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Aviolidojums">
+    <eOperations name="pieprasitKlientaDatus" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eOperations name="pieprasitCilvekuDudzumu" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eOperations name="atjauninaCelojumaDatumi" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eOperations name="celojumaDatumi" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="avioKompanijasNosaukums"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lidojumaReisaNumurs" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="celojumaVirziens" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="viesnica" eType="#//Viesnica"
+        eOpposite="#//Viesnica/aviolidojums"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TurismaSistema">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="regKlients" upperBound="-1"
+        eType="#//RegistretsKlients" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="premKlients" upperBound="-1"
+        eType="#//PremiumKlients"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="celojums" upperBound="-1"
+        eType="#//Celojums" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="administrators" upperBound="-1"
+        eType="#//Administrators" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="turagentura" upperBound="-1"
+        eType="#//Turagentura" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Satistics">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="KontaSumma" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" defaultValueLiteral="0"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="klients" upperBound="-1"
+        eType="#//RegistretsKlients" containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

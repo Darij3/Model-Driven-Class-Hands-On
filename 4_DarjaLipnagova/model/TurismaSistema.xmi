@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<turisms:TurismaSistema
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:turisms="htpps://turisms"
+    xsi:schemaLocation="htpps://turisms turisms.ecore">
+  <klients vardsUzvards="Darja Lipnagova"
+      parole="Qwerty123"
+      konts="dali001"
+      login="dali"/>
+  <klients vardsUzvards="Janis Ozols"
+      parole="Qwerty123"
+      konts="jaoz002"
+      login="jaoz"/>
+  <celojums
+      celosanasValsts="Aviolidojumi">
+    <viesnica
+        viesnicasNosaukums="Moxy"
+        NumuruTips="Single "
+        atrasanasValsts="Danija"
+        aviolidojums="//@celojums.0/@aviolidojums.0"/>
+    <viesnica
+        viesnicasNosaukums="ELGrant"
+        NumuruTips="Double"
+        atrasanasValsts="Portugale"
+        aviolidojums="//@celojums.0/@aviolidojums.1"/>
+    <aviolidojums
+        avioKompanijasNosaukums="airBaltics"
+        lidojumaReisaNumurs="BT-600"
+        celojumaVirziens="Danija"
+        viesnica="//@celojums.0/@viesnica.0"/>
+    <aviolidojums
+        avioKompanijasNosaukums="LuftHansa"
+        lidojumaReisaNumurs="LF-900"
+        celojumaVirziens="Portugale"
+        viesnica="//@celojums.0/@viesnica.1"/>
+  </celojums>
+  <administrators
+      adminVards="Admin Foo"
+      adminPass="Adminfoo111"
+      adminEmail="AdminFoo1@turisms.com"
+      turagenturasParametruSaraksts="TezTours, BultaTours"
+      pakalpojums="//@celojums.0"
+      viesnica="//@celojums.0/@viesnica.0"
+      klients="//@klients.0"/>
+  <administrators
+      adminVards="Admin Foo2"
+      adminPass="Adminfoo222"
+      adminEmail="AdminFoo2@turisms.com"
+      turagenturasParametruSaraksts="Teztours, Novatours, Itaka"
+      pakalpojums="//@celojums.0"
+      viesnica="//@celojums.0/@viesnica.1"
+      klients="//@klients.0 //@klients.1"/>
+  <turagentura
+      adminEpasts="adminfoo@turisms.com"
+      pakalpojumaSniedzejs="//@administrators.0"/>
+  <turagentura
+      adminEpasts="adminfoo2@turisms.com"
+      pakalpojumaSniedzejs="//@administrators.1"/>
+</turisms:TurismaSistema>

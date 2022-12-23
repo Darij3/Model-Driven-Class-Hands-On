@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<turisms:TurismaSistema
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:turisms="htpps://turisms"
+    xsi:schemaLocation="htpps://turisms turisms.ecore">
+  <regKlients
+      login="regreg"
+      epasts="regi1@gmail.com"
+      vardsUzvards="Registrants1 Regi"
+      parole="BrivibasIela123"
+      konts="7.0"/>
+  <regKlients
+      login="reg2reg2"
+      epasts="reg2@gmail.com"
+      vardsUzvards="Regi2 Regi2"
+      parole="Registrans123"
+      konts="10.0"/>
+  <premKlients
+      login="prem1"
+      epasts="premium1@premioum1"
+      konts="15.0"
+      parole="Premiums123"
+      bonus="5.0"/>
+  <premKlients
+      login="prem2"
+      epasts="prem2@prem.com"
+      konts="56.0"
+      parole="Premius123"
+      bonus="3.0"/>
+</turisms:TurismaSistema>

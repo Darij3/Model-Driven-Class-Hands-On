@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_hZzXMGPxEe2x4cLkZCoSjQ" name="2_DarjaLipnagova">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_hfquoGPxEe2x4cLkZCoSjQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_pveosGPxEe2x4cLkZCoSjQ" name="Klients" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_pCra0GP2Ee2x4cLkZCoSjQ" name="vardsUzvards" visibility="protected"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BLcKkGP3Ee2x4cLkZCoSjQ" name="logins" visibility="protected"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_FVwO4GP3Ee2x4cLkZCoSjQ" name="parole" visibility="protected"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_L_xP0GP3Ee2x4cLkZCoSjQ" name="konts" visibility="protected"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_GdLFw2P-Ee2x4cLkZCoSjQ" name="celojums" type="_WBA9MGP1Ee2x4cLkZCoSjQ" association="_GdLFwGP-Ee2x4cLkZCoSjQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GdLFxGP-Ee2x4cLkZCoSjQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GdLFxWP-Ee2x4cLkZCoSjQ" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_eoHrAGP3Ee2x4cLkZCoSjQ" name="celojumaPiedavajumaDetalas"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_mzd70GP3Ee2x4cLkZCoSjQ" name="pieprasitPiedavajumaDetalas"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_NNRPoGP1Ee2x4cLkZCoSjQ" name="Administrators">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_8GsB0GP3Ee2x4cLkZCoSjQ" name="adminVards" visibility="protected"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_HjrpkGP4Ee2x4cLkZCoSjQ" name="adminPass" visibility="protected"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Sk-z0GP4Ee2x4cLkZCoSjQ" name="adminEpasts" visibility="protected" aggregation="shared"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_vutw02P9Ee2x4cLkZCoSjQ" name="klients" type="_pveosGPxEe2x4cLkZCoSjQ" association="_vutw0GP9Ee2x4cLkZCoSjQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3wM7AGP9Ee2x4cLkZCoSjQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3wYhMGP9Ee2x4cLkZCoSjQ" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_isMgQ2P-Ee2x4cLkZCoSjQ" name="pakalpojumaSniedzejs" type="_j3p84GP1Ee2x4cLkZCoSjQ" association="_isMgQGP-Ee2x4cLkZCoSjQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_isMgRGP-Ee2x4cLkZCoSjQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_isMgRWP-Ee2x4cLkZCoSjQ" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_MN1rkGP4Ee2x4cLkZCoSjQ" name="pieprasitTuragenturasSarakstu" concurrency="guarded"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Z-19UGP4Ee2x4cLkZCoSjQ" name="atjauntCelojumaStatusu"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_dqH8QGP4Ee2x4cLkZCoSjQ" name="apstiprinatKlientuPiedavajumu"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_gdYuEGP4Ee2x4cLkZCoSjQ" name="apstiprinatLidojumu"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WBA9MGP1Ee2x4cLkZCoSjQ" name="Celojums">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ioxnkGP4Ee2x4cLkZCoSjQ" name="celosanasValsts" visibility="private"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_hleas2P8Ee2x4cLkZCoSjQ" name="aviolidojums" type="_P3PikGP1Ee2x4cLkZCoSjQ" aggregation="composite" association="_hleasGP8Ee2x4cLkZCoSjQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_5wBds2P9Ee2x4cLkZCoSjQ" name="viesnica" type="_KSA_cGP1Ee2x4cLkZCoSjQ" aggregation="composite" association="_5wBdsGP9Ee2x4cLkZCoSjQ"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_mUymUGP4Ee2x4cLkZCoSjQ" name="pieprasitNumuruPieejamibu"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_okL2EGP4Ee2x4cLkZCoSjQ" name="pieprasitKlientaDatus"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_r6iG0GP4Ee2x4cLkZCoSjQ" name="pieprasitRezervacijasDetalasAviolidojumam"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_KSA_cGP1Ee2x4cLkZCoSjQ" name="Viesnica">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_0uJ4kGP4Ee2x4cLkZCoSjQ" name="atrasanasValsts" visibility="public"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_6oa3kGP4Ee2x4cLkZCoSjQ" name="viesnicasNosaukums"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_AfLPkGP5Ee2x4cLkZCoSjQ" name="NumuruTipi"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_D7F80GP5Ee2x4cLkZCoSjQ" name="cilvekuSkaits"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_5wBdtmP9Ee2x4cLkZCoSjQ" name="celojums" type="_WBA9MGP1Ee2x4cLkZCoSjQ" association="_5wBdsGP9Ee2x4cLkZCoSjQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-HEWcGP9Ee2x4cLkZCoSjQ" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_HpC1QGP5Ee2x4cLkZCoSjQ" name="atalsaPieejamusDatus"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_LLyjQGP5Ee2x4cLkZCoSjQ" name="rezervetNumuru"/>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_P3PikGP1Ee2x4cLkZCoSjQ" name="Aviolidojums">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_NA1ZUGP5Ee2x4cLkZCoSjQ" name="celosanasValsts"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_SQ3vkGP5Ee2x4cLkZCoSjQ" name="aviokompanijasnNosaukums" visibility="private"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_XMRSkGP5Ee2x4cLkZCoSjQ" name="lidojumaReiss" visibility="private"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_rOWg0GP5Ee2x4cLkZCoSjQ" name="celojumaDatumi"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_GIdkkmP_Ee2x4cLkZCoSjQ" name="viesnica" type="_KSA_cGP1Ee2x4cLkZCoSjQ" aggregation="shared" association="_GIc9gGP_Ee2x4cLkZCoSjQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GIeLoGP_Ee2x4cLkZCoSjQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GIeLoWP_Ee2x4cLkZCoSjQ" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_eB-mIGP5Ee2x4cLkZCoSjQ" name="pieprasitKlientaDatus"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_g4T6EGP5Ee2x4cLkZCoSjQ" name="pieprasitCilvekuSkaits"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_js-aEGP5Ee2x4cLkZCoSjQ" name="atjauninaCelojumaDatus"/>
+    </nestedClassifier>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_j3p84GP1Ee2x4cLkZCoSjQ" name="Turagentura">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_rh-SUGP3Ee2x4cLkZCoSjQ" name="adminEpasts"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_xJIIEGP3Ee2x4cLkZCoSjQ" name="atlasitViesnicuSaraksts"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_0HtZEGP3Ee2x4cLkZCoSjQ" name="piedavatAviolidojumuSaraksts"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_3Uv80GP3Ee2x4cLkZCoSjQ" name="pieprasitKlientuSaraksts"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_hleasGP8Ee2x4cLkZCoSjQ" name="atjaunoAviolidojums" memberEnd="_hleas2P8Ee2x4cLkZCoSjQ _hleatmP8Ee2x4cLkZCoSjQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hleasWP8Ee2x4cLkZCoSjQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hleasmP8Ee2x4cLkZCoSjQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_hleatmP8Ee2x4cLkZCoSjQ" name="celojums" type="_WBA9MGP1Ee2x4cLkZCoSjQ" association="_hleasGP8Ee2x4cLkZCoSjQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Be1jgGP-Ee2x4cLkZCoSjQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WHLV8GP9Ee2x4cLkZCoSjQ" name="rezerve" memberEnd="_WHLV82P9Ee2x4cLkZCoSjQ _WHPnYGP9Ee2x4cLkZCoSjQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WHLV8WP9Ee2x4cLkZCoSjQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WHLV8mP9Ee2x4cLkZCoSjQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WHLV82P9Ee2x4cLkZCoSjQ" name="viesnica" type="_KSA_cGP1Ee2x4cLkZCoSjQ" association="_WHLV8GP9Ee2x4cLkZCoSjQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WHPnYGP9Ee2x4cLkZCoSjQ" name="administrators" type="_NNRPoGP1Ee2x4cLkZCoSjQ" association="_WHLV8GP9Ee2x4cLkZCoSjQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Z0OPcGP9Ee2x4cLkZCoSjQ" name="atjauno" memberEnd="_Z0OPc2P9Ee2x4cLkZCoSjQ _Z0OPdmP9Ee2x4cLkZCoSjQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Z0OPcWP9Ee2x4cLkZCoSjQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Z0OPcmP9Ee2x4cLkZCoSjQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Z0OPdmP9Ee2x4cLkZCoSjQ" name="administrators" type="_NNRPoGP1Ee2x4cLkZCoSjQ" association="_Z0OPcGP9Ee2x4cLkZCoSjQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eCHMMGP9Ee2x4cLkZCoSjQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eCXD0GP9Ee2x4cLkZCoSjQ" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Z0OPc2P9Ee2x4cLkZCoSjQ" name="celojums" type="_WBA9MGP1Ee2x4cLkZCoSjQ" association="_Z0OPcGP9Ee2x4cLkZCoSjQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_vutw0GP9Ee2x4cLkZCoSjQ" name="atlasa" memberEnd="_vutw02P9Ee2x4cLkZCoSjQ _vutw1mP9Ee2x4cLkZCoSjQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vutw0WP9Ee2x4cLkZCoSjQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vutw0mP9Ee2x4cLkZCoSjQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_vutw1mP9Ee2x4cLkZCoSjQ" name="administrators" type="_NNRPoGP1Ee2x4cLkZCoSjQ" association="_vutw0GP9Ee2x4cLkZCoSjQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_5wBdsGP9Ee2x4cLkZCoSjQ" memberEnd="_5wBds2P9Ee2x4cLkZCoSjQ _5wBdtmP9Ee2x4cLkZCoSjQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5wBdsWP9Ee2x4cLkZCoSjQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5wBdsmP9Ee2x4cLkZCoSjQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_GdLFwGP-Ee2x4cLkZCoSjQ" name="izvelas" memberEnd="_GdLFw2P-Ee2x4cLkZCoSjQ _GdLFxmP-Ee2x4cLkZCoSjQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GdLFwWP-Ee2x4cLkZCoSjQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GdLFwmP-Ee2x4cLkZCoSjQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GdLFxmP-Ee2x4cLkZCoSjQ" name="klients" type="_pveosGPxEe2x4cLkZCoSjQ" association="_GdLFwGP-Ee2x4cLkZCoSjQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JJ2ucGP-Ee2x4cLkZCoSjQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JKBGgGP-Ee2x4cLkZCoSjQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_isMgQGP-Ee2x4cLkZCoSjQ" name="pieprasa" visibility="private" memberEnd="_isMgQ2P-Ee2x4cLkZCoSjQ _isMgRmP-Ee2x4cLkZCoSjQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_isMgQWP-Ee2x4cLkZCoSjQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_isMgQmP-Ee2x4cLkZCoSjQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_isMgRmP-Ee2x4cLkZCoSjQ" name="administrators" type="_NNRPoGP1Ee2x4cLkZCoSjQ" association="_isMgQGP-Ee2x4cLkZCoSjQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_GIc9gGP_Ee2x4cLkZCoSjQ" memberEnd="_GIdkkmP_Ee2x4cLkZCoSjQ _GIeLomP_Ee2x4cLkZCoSjQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GIdkkGP_Ee2x4cLkZCoSjQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GIdkkWP_Ee2x4cLkZCoSjQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GIeLomP_Ee2x4cLkZCoSjQ" name="aviolidojums" type="_P3PikGP1Ee2x4cLkZCoSjQ" association="_GIc9gGP_Ee2x4cLkZCoSjQ"/>
+  </packagedElement>
+</uml:Model>
